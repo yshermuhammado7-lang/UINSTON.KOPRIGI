@@ -1,0 +1,50 @@
+*{box-sizing:border-box}
+body{margin:0;background:#ddd8ce;font:14px Arial;color:#30363b}
+nav{display:flex;background:#f6f5f1;overflow-x:auto}
+nav button{flex:1;min-width:95px;padding:13px 6px;border:1px solid #ddd;background:#f2f0eb;font-weight:bold;cursor:pointer}
+nav button.active{background:white;border-bottom:3px solid #b67c35}
+main{max-width:1450px;margin:12px auto;padding:0 8px}
+header{padding:17px;background:#392a20;color:#f3d2a3;font:bold 24px Georgia}
+.layout{display:grid;grid-template-columns:235px minmax(0,1fr);border:4px solid #c5c0b6;background:#eeece6}
+aside{padding:15px;background:#eeeae0;border-right:4px solid #b9b3a8}
+h3{margin:5px 0 17px;font-size:18px}
+label{display:block;font-size:13px;margin-bottom:6px}
+.field{margin:16px 0}
+input[type=number],select{width:100%;padding:9px;border:1px solid #aaa}
+input[type=range]{width:100%;accent-color:#9c7547}
+button.action{width:100%;padding:10px;margin:5px 0;border:1px solid #999;background:linear-gradient(#fff,#d8d8d2);cursor:pointer}
+button.action:disabled{opacity:.55;cursor:not-allowed}
+.primary{background:linear-gradient(#edf3e8,#c6d2c1)!important}
+.value{font-weight:bold;color:#76542d}
+.scale{display:flex;justify-content:space-between;font-size:11px;color:#777}
+.scene{min-width:0;overflow:hidden;background:#a9977e}
+.scene svg{display:block;width:100%;height:auto;touch-action:none}
+.panel{display:none;min-height:420px}
+.panel.active{display:block}
+.explain{font-size:13px;line-height:1.7}
+.status{background:#fff;padding:11px;border:1px solid #c7c1b7;font-size:12px;line-height:1.6;margin-top:12px}
+.ok{color:#14753d;font-weight:bold}
+.bad{color:#9d4d18;font-weight:bold}
+.balance-result{
+ background:#fff;
+ border:1px solid #b9ad98;
+ padding:10px;
+ margin-top:5px;
+ font-size:12px;
+ line-height:1.7;
+ display:none;
+}
+.balance-result strong{color:#14753d}
+footer{
+ background:#ef7900;color:white;padding:12px 16px;
+ font-size:12px;display:flex;justify-content:space-between;
+ align-items:center;gap:12px;flex-wrap:wrap
+}
+@media(max-width:700px){
+ .layout{grid-template-columns:1fr}
+ aside{border-right:0;border-bottom:3px solid #b9b3a8}
+ header{font-size:19px}
+}
+.wire{fill:none;stroke:#20272b;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.shine{fill:none;stroke:#737a78;stroke-width:1.2}
+.terminal{fill:#e9c45d;stroke:#49331a;stroke-width:2}
